@@ -1,0 +1,88 @@
+.button
+	background-color: $blue
+	border: none
+	color: $white
+	padding: 15px 32px
+	text-align: center
+	text-decoration: none
+	display: inline-block
+	font-size: 16px
+	margin: 4px 2px
+	cursor: pointer
+	border-radius: 5px
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2)
+
+.center-button-wrap
+	position: relative
+	text-align: center
+	width: 100%
+
+textarea 
+	width: 50%
+
+.content-head
+	font-weight: 400
+	text-transform: uppercase
+	letter-spacing: 0.1em
+	margin: 2em 0 1em
+
+.is-center 
+	text-align: center
+
+.button-xlarge
+	font-size: 125%
+
+.contact-button
+	margin: 1em
+
+#name, #email
+	width: 50%
+
+fieldset
+	border: none
+
+input
+	border-top: none
+	border-left: none
+	border-right: none
+	width: 50%
+	margin: 1em
+	text-align: center
+
+::-webkit-input-placeholder
+	text-align: center
+
+\:-moz-placeholder
+	text-align: center
+
+::-moz-placeholder
+	text-align: center
+
+\:-ms-input-placeholder 
+	text-align: center
+
+textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus   
+	border-color: $blue
+	box-shadow: 1px $blue
+	outline: 0 none
+
+.contact-form
+	color: $black
+	background-color: $white
+	border-radius: 10px
+	display: block
+	margin: auto
+	max-width: 910px
+
+.contact-form-wrap
+	@include grid-column(12)
+	padding: 20px
+	text-align: center
+	margin: 100px auto
+
+.contact-heading
+	padding: 50px 25px
+
+#message
+	margin-top: 1em
+	width: 50%

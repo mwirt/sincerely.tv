@@ -1,0 +1,137 @@
+--- 
+layout: default 
+---
+<div id="loading">loading...</div>
+<div class="notseen index">
+    <div class="video-wrap">
+        <video autoplay muted loop id="video-bg">
+            <source src="video3.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="content">
+    	<header class="header">
+            <h1>sincerely productions</h1>
+        </header>
+        <div class="inner-content">
+
+            <main>
+                <div class="welcome-div">
+                    {% image sincerely-productions-logo.png class="header-logo" %}
+                    <h2 class="super-title">THINK VIDEO.</h2>
+                    <p class="super-blurb">Detroit based video and website production that is custom built and affordable.</p>
+                    <div class="center-button-wrap">
+                        <a href="#" class="button header-button">WATCH OUR VIDEOS</a>
+                        <a href="#" class="button header-button">CONTACT US</a>
+                    </div>
+                </div>
+                <div class="what-we-do">
+                    <h2>What We Do</h2>
+                    <p>Sincerely Productions is a video production and web design company.</p>
+                    <div>
+                        <img src="http://placehold.it/150x150">
+                        <h3>We make videos!</h3>
+                        <ul>
+                            <li>
+                                <h4>Promotional</h4>
+                                <span><p>Live6 Holiday Market</p></span>
+                            </li>
+                            <li>
+                                <h4>Documentary</h4>
+                                <p>Hard Earth</p>
+                            </li>
+                            <li>
+                                <h4>Web Series</h4>
+                                <p>Katies Crossing</p>
+                            </li>
+                            <li>
+                                <h4>Social Media Marketing</h4>
+                                <p>Busy Beaver</p>
+                            </li>
+                            <li>
+                                <h4>Music Videos</h4>
+                                <p>Joan of Arc</p>
+                            </li>
+                            <li>
+                                <h4>Training Videos/Tutorials</h4>
+                                <p>Detroit Home Mortgage</p>
+                            </li>
+                            <li>
+                                <h4>Video Installations</h4>
+                    </li>
+                    </ul>
+                    <a class="button" href="/videos/">
+                BROWSE OUR VIDEOS
+            </a>
+                </div>
+                <div>
+                    <img src="http://placehold.it/150x150">
+                    <h3>We build websites!</h3>
+                    <p>We build custom websites and create online spaces for the videos we make. We'll do anything from help you get your video working on your own website to building an entire website from scratch for you or your business.</p>
+                </div>
+                <div class="who-we-are">
+                    <h2>Who we are</h2> 
+                    <div class="sally">
+                    	{% image sally-lawton.jpg class="profile-pic" %}
+                    	<div class="sally-info"><h4>Sally Lawton - Co-Owner</h4>
+                    	<p>Table motion knife free-market receding face forwards katana sunglasses dolphin man youtube fluidity faded. Silent into city Kowloon systema post-carbon tattoo DIY table car face forwards narrative dolphin math-tanto lights. Geodesic meta-kanji apophenia cardboard carbon face forwards vinyl media receding neon pre-faded. Dome drugs realism engine cyber-sign. </p>
+                    </div>
+                    </div>
+                    <div class="max"> 
+                    	<div class="max-info">
+                    	<h4>Max Wirt - Co-Owner</h4>
+                    	<p>Max founded Sincerely Productions in 2013 while living in the basement of a cinema in Chicago, IL. Prior to that, he worked in Theatre and holds a BA in Theatre Directing from UCLA. In addition to producing and editing much of Sincerely's video work, he does all of the web design for the company. He moved to Detroit in 2017.</p>
+                    	</div>
+                    	{% image max-wirt.jpg class="profile-pic" %}
+                    </div>
+                    <div class="caitlin">
+                    	{% image caitlin-murphy.jpg class="profile-pic" %}
+                    	<div class="caitlin-info">
+                    	<h4>Caitlin Murphy - Outreach Producer</h4>
+                    	<p>Caitlin joined Sincerely Productions in September of 2017. She brings earnestness and social responsibility to her role as a producer with Sincerely. She also works full time in Detroit's community development sector and holds professional degrees from University of Michigan and University of Detroit Mercy.</p>
+                    	</div>
+                    </div>
+                </div>
+                <div class="contact-form-wrap">
+                    <div id="gform-wrap" class="contact-form">
+                        <h2 class="contact-heading"><i class="fa fa-envelope-o"></i>&nbsp;&nbsp;&nbsp;Contact us&nbsp;&nbsp;&nbsp;<i class="fa fa-envelope-o"></i></h2>
+                        <p>If you're interested in our help with your next video or website, drop a line!</p>
+                        <form id="gform" method="POST" class="pure-form pure-form-stacked" data-email="example@email.net" action="https://script.google.com/a/sincerely.tv/macros/s/AKfycbzlnOOiELztBtubP4KExKCeSl3YjReq8OI2lkS--K4U7r9g_Qw/exec">
+                            <!-- change the form action to your script url -->
+                            <fieldset class="pure-group">
+                                <input id="name" name="name" placeholder="Name" />
+                            </fieldset>
+                            <fieldset class="pure-group">
+                                <input id="company" name="company" placeholder="Company" />
+                            </fieldset>
+                            <fieldset class="pure-group">
+                                <input id="email" name="email" type="email" value="" required placeholder="your.name@email.com" />
+                                <span id="email-invalid" style="display:none">Must be a valid email address</span>
+                            </fieldset>
+                            <fieldset class="pure-group">
+                                <input id="phone" name="phone" placeholder="Phone" />
+                            </fieldset>
+                            <fieldset class="pure-group">
+                                <textarea id="message" name="message" rows="10" placeholder="Message"></textarea>
+                            </fieldset>
+                            <button class="button contact-button">
+                                <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+                        </form>
+                    </div>
+                    <!-- Thankyou Message People See when they submit the form: -->
+                    <div id="thank-you-message">
+                        <h6>Thank you for contacting us! We will get back to you soon!</h6>
+                    </div>
+                </div>
+            </main>
+        
+
+            <div class="footer-gradient">
+                <footer>
+                    <a href="https://www.facebook.com/sincerelyproductions/"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/sincerelytv/"><i class="fa fa-instagram"></i></a>
+                    <a href="https://vimeo.com/sincerelyproductions"><i class="fa fa-vimeo"></i></a>
+                </footer>
+            </div>
+            </div>
+            </div>
+</div>

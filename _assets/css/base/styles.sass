@@ -1,0 +1,145 @@
+.index
+	color: $white
+a
+	color: $pink
+a:hover
+	color: $yellow
+ul
+	list-style-type: none
+	margin: 0
+	padding: 0
+.content
+	position: relative
+
+#loading
+	position: absolute
+	text-align: center
+	right: 0
+	left: 0
+	top: 40vh
+
+.header
+	position: fixed
+	left: 0
+	z-index: 3
+	height: 60px
+	font-size: 1em
+	text-shadow: $pink 1px 0 10px
+
+main
+	@include grid-container
+	position: relative
+	left: 0
+	right: 0
+	margin: 0 auto
+	width: 100%
+	top: 60px
+	max-width: 960px
+
+.welcome-div
+	position: relative
+	display: block
+	text-align: center
+	top: 50vh
+	height: 80vh
+
+.header-logo
+	width: 100px
+	height: auto
+
+.header-button
+	position: relative
+	margin: auto
+.super-blurb
+	padding: 15px 0
+.mimg
+	width: 50%
+	height: auto
+.hidden
+	opacity: 0
+	-webkit-transition: opacity .5s ease-in
+	-moz-transition: opacity .5s ease-in
+	-ms-transition: opacity .5s ease-in
+	-o-transition: opacity .5s ease-in
+	transition: opacity .5s ease-in
+
+.notseen
+	opacity: 0
+	-webkit-transition: opacity 2s ease-in
+	-moz-transition: opacity 2s ease-in
+	-ms-transition: opacity 2s ease-in
+	-o-transition: opacity 2s ease-in
+	transition: opacity 2s ease-in
+
+.load
+	opacity: 1
+	
+#video-bg
+	position: fixed
+	top: 50%
+	left: 50%
+	z-index: 1
+	min-width: 100%
+	min-height: 100%
+	width: auto
+	height: auto
+	transform: translate(-50%, -50%)
+
+.inner-content
+	position: absolute
+	left: 50%
+	transform: translate(-50%, 0)
+	z-index: 2
+	width: 100%
+
+.profile-pic
+	max-height: 200px
+	max-width: 200px
+
+#thank-you-message
+	display: none
+	padding: 50px 25px
+
+.footer-gradient
+	background-color: $black
+	height: 200px
+	padding-top: 100px
+	position: relative
+	z-index: 2
+	color: $white
+	a
+		color: $white
+
+.what-we-do
+	display: block
+	position: relative
+	margin-top: 20vh 
+
+.who-we-are
+	@include grid-container
+
+.sally
+	@include grid-container
+	margin: 50px auto
+	img
+		@include grid-column(4, $my-custom-grid)
+	.sally-info
+		@include grid-column(8, $my-custom-grid)
+
+
+.max
+	@include grid-container
+	margin: 50px auto
+	img
+		@include grid-column(4, $my-custom-grid)
+	.max-info
+		@include grid-column(8, $my-custom-grid)
+
+
+.caitlin
+	@include grid-container
+	margin: 50px auto
+	img
+		@include grid-column(4, $my-custom-grid)
+	.caitlin-info
+		@include grid-column(8, $my-custom-grid)
