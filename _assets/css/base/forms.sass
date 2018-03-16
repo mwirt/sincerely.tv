@@ -10,7 +10,11 @@
 	margin: 4px 2px
 	cursor: pointer
 	border-radius: 5px
-	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2)
+	text-shadow: 0 1px 1px
+	transition: all .2s ease-in-out rgba(0, 0, 0, 0.2)
+.button:hover
+	color: $white
+	transform: scale(1.02)
 
 .center-button-wrap
 	position: relative
@@ -35,9 +39,6 @@ textarea
 .contact-button
 	margin: 1em
 
-#name, #email
-	width: 50%
-
 fieldset
 	border: none
 
@@ -48,6 +49,8 @@ input
 	width: 50%
 	margin: 1em
 	text-align: center
+	@media(max-width: 960px)
+		width: 80%
 
 ::-webkit-input-placeholder
 	text-align: center
@@ -67,18 +70,22 @@ textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus
 	outline: 0 none
 
 .contact-form
-	color: $black
-	background-color: $white
+	color: $white
 	border-radius: 10px
 	display: block
 	margin: auto
 	max-width: 910px
+	input, textarea
+		background-color: transparent
+		color: $white
+
 
 .contact-form-wrap
 	@include grid-column(12)
 	padding: 20px
 	text-align: center
 	margin: 100px auto
+	background: linear-gradient(to bottom right, transparent, rgba(255, 255, 255, 0.4))
 
 .contact-heading
 	padding: 50px 25px
@@ -86,3 +93,17 @@ textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus
 #message
 	margin-top: 1em
 	width: 50%
+	@media(max-width: 960px)
+		width: 80%
+
+.contact-icon
+	font-size: 3em
+
+::placeholder
+	color: $white
+
+\:-ms-input-placeholder
+	color: $white
+
+::-ms-input-placeholder
+	color: $white

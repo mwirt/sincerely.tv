@@ -11,5 +11,3 @@ $(window).on('load', function () {
 	$("#loading").addClass("hidden").delay( 2000 );
     $(".notseen").addClass("load")
 });
-
-

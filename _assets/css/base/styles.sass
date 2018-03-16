@@ -3,7 +3,7 @@
 a
 	color: $pink
 a:hover
-	color: $yellow
+	color: $white
 ul
 	list-style-type: none
 	margin: 0
@@ -23,35 +23,59 @@ ul
 	left: 0
 	z-index: 3
 	height: 60px
-	font-size: 1em
 	text-shadow: $pink 1px 0 10px
+	font-size: 12px
+	a
+		text-decoration: none
+		color: $white
+		display: inline-block
+	@media(max-width: 1590px)
+		position: relative
 
 main
 	@include grid-container
 	position: relative
 	left: 0
 	right: 0
-	margin: 0 auto
+	margin: -60px auto 0 auto
+	max-width: 100%
 	width: 100%
-	top: 60px
 	max-width: 960px
 
 .welcome-div
+	display: flex
+	align-items: flex-end
+	height: 100vh
+
+.welcome-div-content
+	@include grid-column(12, $my-custom-grid)
 	position: relative
-	display: block
+	display: table-cell
 	text-align: center
-	top: 50vh
-	height: 80vh
+	vertical-align: middle
+	padding-bottom: 50px
 
 .header-logo
 	width: 100px
 	height: auto
 
+
+
+
 .header-button
 	position: relative
-	margin: auto
-.super-blurb
-	padding: 15px 0
+	margin: 20px auto
+	width: 150px
+
+.super-title
+	padding: 30px 0 20px 0
+
+.scroll-icon
+	font-size: 4em
+	position: relative
+	display: none
+
+
 .mimg
 	width: 50%
 	height: auto
@@ -95,51 +119,179 @@ main
 .profile-pic
 	max-height: 200px
 	max-width: 200px
+	opacity: 0.9
+	margin-top: 0
 
 #thank-you-message
 	display: none
 	padding: 50px 25px
 
 .footer-gradient
-	background-color: $black
+	background: linear-gradient(transparent, $black)
 	height: 200px
 	padding-top: 100px
 	position: relative
 	z-index: 2
-	color: $white
-	a
-		color: $white
+	color: $black
+	text-align: center
+	padding: 50px
+	padding-top: 300px
 
 .what-we-do
 	display: block
 	position: relative
-	margin-top: 20vh 
+	top: 100%
+ 
+	text-align: center
+	@include grid-container
+
+.what-we-do-sub
+	@include grid-column(3, $my-custom-grid-2)
+	@include grid-media($my-custom-grid)
+		@include grid-column(6)
+	position: relative
+	margin-bottom: 100px
+
+.what-we-do-blurb
+	@include grid-column(12, $my-custom-grid)
+	font-size: 3em
+	margin-bottom: 150px
+	position: relative
+	display: block
+	@media(max-width: 600px)
+		font-size: 2em
+
+.what-we-do-icon
+	font-size: 3em
+	
+.we-make-videos, .we-make-websites
+	margin: 25px auto 50px auto
+
+.browse-videos
+	margin: 50px auto 100px auto
+
+.contact-button-wrap
+	position: relative
+	margin-top: 100px
+	text-align: center
+	padding: 100px 0
+
+.big-contact-button
+	display: inline-block
+	margin: auto
+	width: 250px
+	text-align: center
+
 
 .who-we-are
 	@include grid-container
+
+.who-we-are-title
+	margin-left: 20px
 
 .sally
 	@include grid-container
 	margin: 50px auto
 	img
-		@include grid-column(4, $my-custom-grid)
-	.sally-info
-		@include grid-column(8, $my-custom-grid)
-
+		@include grid-column(3, $my-custom-grid-2)
+		@include grid-media($my-custom-grid)
+			@include grid-column(4)
+		width: 100%
+		height: auto
+		margin-top: 10px
+		margin-bottom: 10px
+	.profile-info
+		@include grid-column(3, $my-custom-grid-2)
+		@include grid-media($my-custom-grid)
+			@include grid-column(8)
+		padding-top: 10px
 
 .max
 	@include grid-container
 	margin: 50px auto
 	img
-		@include grid-column(4, $my-custom-grid)
-	.max-info
-		@include grid-column(8, $my-custom-grid)
+		@include grid-column(3, $my-custom-grid-2)
+		@include grid-media($my-custom-grid)
+			@include grid-column(4)
+		width: 100%
+		height: auto
+		margin-top: 10px
+		margin-bottom: 10px
+	.profile-info
+		@include grid-column(3, $my-custom-grid-2)
+		@include grid-media($my-custom-grid)
+			@include grid-column(8)
+		padding-top: 10px
 
 
 .caitlin
 	@include grid-container
 	margin: 50px auto
 	img
-		@include grid-column(4, $my-custom-grid)
-	.caitlin-info
-		@include grid-column(8, $my-custom-grid)
+		@include grid-column(3, $my-custom-grid-2)
+		@include grid-media($my-custom-grid)
+			@include grid-column(4)
+		width: 100%
+		height: auto
+		margin-top: 10px
+		margin-bottom: 10px
+	.profile-info
+		@include grid-column(3, $my-custom-grid-2)
+		@include grid-media($my-custom-grid)
+			@include grid-column(8)
+		padding-top: 10px
+
+.fb-icon, .ig-icon, .vim-icon
+	position: relative
+	margin: 30px
+	text-align: center
+	font-size: 3em
+	color: $white
+	a:hover
+		color: $white
+
+
+#scroll-section span
+	position: absolute
+	bottom: 0
+	left: 50%
+	width: 24px
+	height: 24px
+	margin-left: -12px
+	border-left: 1px solid #fff
+	border-bottom: 1px solid #fff
+	-webkit-transform: rotate(-45deg)
+	transform: rotate(-45deg)
+	-webkit-animation: sdb05 1.5s infinite
+	animation: sdb05 1.5s infinite
+	box-sizing: border-box
+
+@-webkit-keyframes sdb05
+	0%
+		-webkit-transform: rotate(-45deg) translate(0, 0)
+		opacity: 0
+	
+	50%
+		opacity: 1
+	
+	100%
+		-webkit-transform: rotate(-45deg) translate(-20px, 20px)
+		opacity: 0
+
+@keyframes sdb05
+	0%
+		transform: rotate(-45deg) translate(0, 0)
+		opacity: 0
+	
+	50%
+		opacity: 1
+	
+	100%
+		transform: rotate(-45deg) translate(-20px, 20px)
+		opacity: 0
+
+.lb-vid-desc
+	width: 80%
+	display: block
+	margin: auto
+	text-align: center

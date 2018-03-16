@@ -1,99 +1,112 @@
 --- 
 layout: default 
+fbimg: http://sincerely.tv/android-chrome-512x512.png
 ---
-<div id="loading">loading...</div>
+<div id="loading"><img src="http://www.villacarlotta.it/images/loading.gif"></div>
 <div class="notseen index">
     <div class="video-wrap">
-        <video autoplay muted loop id="video-bg">
+        <video poster="mobile-bg-1.jpg" autoplay muted loop id="video-bg">
             <source src="video3.mp4" type="video/mp4">
         </video>
     </div>
     <div class="content">
-    	<header class="header">
-            <h1>sincerely productions</h1>
+        <header class="header">
+            <a class="home-button" href="/">
+            <h1>sincerely</h1>
+            <h1>productions</h1>
+            </a>
         </header>
         <div class="inner-content">
-
             <main>
                 <div class="welcome-div">
-                    {% image sincerely-productions-logo.png class="header-logo" %}
+                    <div class="welcome-div-content">
+                        {% image sincerely-productions-logo.png class="header-logo" %}
                     <h2 class="super-title">THINK VIDEO.</h2>
-                    <p class="super-blurb">Detroit based video and website production that is custom built and affordable.</p>
                     <div class="center-button-wrap">
-                        <a href="#" class="button header-button">WATCH OUR VIDEOS</a>
-                        <a href="#" class="button header-button">CONTACT US</a>
+                        <a href="/videos/" class="button header-button">WATCH</a>
+                        <a href="#contact-us" class="button header-button">CONTACT</a>
                     </div>
+                <!--
+                    <div id="scroll-section"><span></span></div>
+                -->
+                </div>
+                
                 </div>
                 <div class="what-we-do">
-                    <h2>What We Do</h2>
-                    <p>Sincerely Productions is a video production and web design company.</p>
-                    <div>
-                        <img src="http://placehold.it/150x150">
-                        <h3>We make videos!</h3>
+                    <p class="what-we-do-blurb">Sincerely Productions is a video production and web design company based in Detroit, MI.</p>
+                    <div class="what-we-do-sub">
+                        <span class="what-we-do-icon"><i class="fa fa-film"></i></span>
+                        <h3 class="we-make-videos">We make videos!</h3>
                         <ul>
                             <li>
                                 <h4>Promotional</h4>
-                                <span><p>Live6 Holiday Market</p></span>
                             </li>
                             <li>
                                 <h4>Documentary</h4>
-                                <p>Hard Earth</p>
                             </li>
                             <li>
                                 <h4>Web Series</h4>
-                                <p>Katies Crossing</p>
                             </li>
                             <li>
                                 <h4>Social Media Marketing</h4>
-                                <p>Busy Beaver</p>
                             </li>
                             <li>
                                 <h4>Music Videos</h4>
-                                <p>Joan of Arc</p>
                             </li>
                             <li>
                                 <h4>Training Videos/Tutorials</h4>
-                                <p>Detroit Home Mortgage</p>
                             </li>
-                            <li>
-                                <h4>Video Installations</h4>
-                    </li>
-                    </ul>
-                    <a class="button" href="/videos/">
-                BROWSE OUR VIDEOS
+                        </ul>
+                    </div>
+                    <div class="what-we-do-sub">
+                        <span class="what-we-do-icon"><i class="fa fa-code"></i></span>
+                        <h3 class="we-make-websites">We make websites!</h3>
+                        <ul>
+                            <li><h4>Personal</h4></li>
+                            <li><h4>Business</h4></li>
+                            <li><h4>Artist Portfolios</h4></li>
+                            <li><h4>Custom Video Solutions</h4></li>
+                            <li><h4>Live Video Streaming</h4></li>
+                            <li><h4>One of a Kind Design</h4></li>
+                        </ul>
+                        
+                    </div>
+                    <div class="contact-button-wrap">
+                    <a class="button big-contact-button" href="#contact-us">
+                CONTACT US FOR A QUOTE
             </a>
                 </div>
-                <div>
-                    <img src="http://placehold.it/150x150">
-                    <h3>We build websites!</h3>
-                    <p>We build custom websites and create online spaces for the videos we make. We'll do anything from help you get your video working on your own website to building an entire website from scratch for you or your business.</p>
-                </div>
+            </div>
                 <div class="who-we-are">
-                    <h2>Who we are</h2> 
+                    <h2 class="who-we-are-title">Who we are</h2>
                     <div class="sally">
-                    	{% image sally-lawton.jpg class="profile-pic" %}
-                    	<div class="sally-info"><h4>Sally Lawton - Co-Owner</h4>
-                    	<p>Table motion knife free-market receding face forwards katana sunglasses dolphin man youtube fluidity faded. Silent into city Kowloon systema post-carbon tattoo DIY table car face forwards narrative dolphin math-tanto lights. Geodesic meta-kanji apophenia cardboard carbon face forwards vinyl media receding neon pre-faded. Dome drugs realism engine cyber-sign. </p>
+                        <div class="who-img-wrap">
+                        {% image sally-lawton.jpg class="profile-pic" %}
+                        </div>
+                        <div class="profile-info">
+                            <h4>Sally Lawton - Co-Owner</h4>
+                            <p>Sally studied film at DePaul University in Chicago and started Sincerely Productions with Max shortly after graduating. In addition to making commercial work, she has curated experimental cinema screenings in Chicago and Detroit, and in 2017 finished her first feature length documentary, The Hard Earth, a profile of the Ukrainian revolution. Her work has screened at Echo Park Film Center, The Nightingale Cinema, Onion City Film Festival, and other venues across the country. 
+</p>
+                        </div>
                     </div>
-                    </div>
-                    <div class="max"> 
-                    	<div class="max-info">
-                    	<h4>Max Wirt - Co-Owner</h4>
-                    	<p>Max founded Sincerely Productions in 2013 while living in the basement of a cinema in Chicago, IL. Prior to that, he worked in Theatre and holds a BA in Theatre Directing from UCLA. In addition to producing and editing much of Sincerely's video work, he does all of the web design for the company. He moved to Detroit in 2017.</p>
-                    	</div>
-                    	{% image max-wirt.jpg class="profile-pic" %}
+                    <div class="max">
+                        {% image max-wirt.jpg class="profile-pic" %}
+                        <div class="profile-info">
+                            <h4>Max Wirt - Co-Owner</h4>
+                            <p>Max founded Sincerely Productions in 2013 while living in the basement of a cinema in Chicago, IL. Prior to that, he worked in Theatre and holds a BA in Theatre Directing from UCLA. In addition to producing and editing much of Sincerely's video work, he does all of the web design for the company. He moved to Detroit in 2017.</p>
+                        </div>    
                     </div>
                     <div class="caitlin">
-                    	{% image caitlin-murphy.jpg class="profile-pic" %}
-                    	<div class="caitlin-info">
-                    	<h4>Caitlin Murphy - Outreach Producer</h4>
-                    	<p>Caitlin joined Sincerely Productions in September of 2017. She brings earnestness and social responsibility to her role as a producer with Sincerely. She also works full time in Detroit's community development sector and holds professional degrees from University of Michigan and University of Detroit Mercy.</p>
-                    	</div>
+                        {% image caitlin-murphy.jpg class="profile-pic" %}
+                        <div class="profile-info">
+                            <h4>Caitlin Murphy - Outreach Producer</h4>
+                            <p>Caitlin joined Sincerely Productions in September of 2017. She brings earnestness and social responsibility to her role as a producer with Sincerely. She also works full time in Detroit's community development sector and holds professional degrees from University of Michigan and University of Detroit Mercy.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="contact-form-wrap">
+                <div id="contact-us" class="contact-form-wrap">
                     <div id="gform-wrap" class="contact-form">
-                        <h2 class="contact-heading"><i class="fa fa-envelope-o"></i>&nbsp;&nbsp;&nbsp;Contact us&nbsp;&nbsp;&nbsp;<i class="fa fa-envelope-o"></i></h2>
+                        <h2 class="contact-heading">Contact us</h2>
                         <p>If you're interested in our help with your next video or website, drop a line!</p>
                         <form id="gform" method="POST" class="pure-form pure-form-stacked" data-email="example@email.net" action="https://script.google.com/a/sincerely.tv/macros/s/AKfycbzlnOOiELztBtubP4KExKCeSl3YjReq8OI2lkS--K4U7r9g_Qw/exec">
                             <!-- change the form action to your script url -->
@@ -123,15 +136,13 @@ layout: default
                     </div>
                 </div>
             </main>
-        
-
             <div class="footer-gradient">
                 <footer>
-                    <a href="https://www.facebook.com/sincerelyproductions/"><i class="fa fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/sincerelytv/"><i class="fa fa-instagram"></i></a>
-                    <a href="https://vimeo.com/sincerelyproductions"><i class="fa fa-vimeo"></i></a>
+                    <a class="fb-icon" href="https://www.facebook.com/sincerelyproductions/"><i class="fa fa-facebook"></i></a>
+                    <a class="ig-icon" href="https://www.instagram.com/sincerelytv/"><i class="fa fa-instagram"></i></a>
+                    <a class="vim-icon" href="https://vimeo.com/sincerelyproductions"><i class="fa fa-vimeo"></i></a>
                 </footer>
             </div>
-            </div>
-            </div>
+        </div>
+    </div>
 </div>
