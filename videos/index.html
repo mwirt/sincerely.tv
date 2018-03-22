@@ -15,7 +15,18 @@ layout: default
         <h3>Featured Videos</h3>
     </div>
     <div class="videos-grid featured-videos">
-
+        <div class="video-unit">
+            <div class="video-img-wrap">
+                <a data-fancybox data-src="#savvy" href="javascript:;">
+                    <img class="video-square" src="posters/savvy.png">
+                </a>
+            </div>
+            <div class="video-title-wrap">
+                <h6 class="video-title">
+                    savvy chic
+                </h6>
+            </div>
+        </div>
         <div class="video-unit">
             <div class="video-img-wrap">
                 <a data-fancybox data-src="#live6-dna-donna" href="javascript:;">
@@ -78,6 +89,15 @@ layout: default
             </div>
         </div>
         
+        
+    </div>
+
+<!--main section-->
+
+        <div class="video-section-title">
+        <h3>Assorted Videos</h3>
+    </div>
+    <div class="videos-grid">
         <div class="video-unit">
             <div class="video-img-wrap">
                 <a data-fancybox data-src="#acwedding" href="javascript:;">
@@ -90,11 +110,6 @@ layout: default
                 </h6>
             </div>
         </div>
-    </div>
-        <div class="video-section-title">
-        <h3>Assorted Videos</h3>
-    </div>
-    <div class="videos-grid">
         <div class="video-unit">
             <div class="video-img-wrap">
                 <a data-fancybox data-src="#dcc" href="javascript:;">
@@ -415,6 +430,7 @@ layout: default
             	</h6>
             </div>
         </div>
+                        {% include video-savvy.html %}
                         {% include video-stormtroopers.html %}
                         {% include video-acwedding.html %}
                         {% include video-badcredit.html  %}
